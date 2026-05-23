@@ -202,11 +202,6 @@ export const PORTFOLIO: PortfolioContent = {
   ],
   education: [
     {
-      institution: 'FIAP',
-      degree: 'Postgraduate Degree – Systems Architecture (.NET with Azure)',
-      period: '2023 – 2024',
-    },
-    {
       institution: 'UNINOVE',
       degree: "Bachelor's Degree – Systems Analysis",
       period: '',
