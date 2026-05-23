@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=JetBrains+Mono:wght@400;500&display=swap');
+
+:root {
+  --color-bg: #0a0e17;
+  --color-surface: #0f1524;
+  --color-elevated: #141c2e;
+  --color-border: #243047;
+  --color-text: #eef2f8;
+  --color-muted: #94a3b8;
+  --color-accent: #38bdf8;
+  --color-accent-2: #818cf8;
+  --layout-max: 72rem;
+  --radius-sm: 0.4rem;
+  --radius-md: 0.75rem;
+  --radius-lg: 1rem;
+  --shadow-soft: 0 12px 40px color-mix(in oklab, black 45%, transparent);
+  --shadow-glow: 0 0 24px color-mix(in oklab, var(--color-accent) 28%, transparent);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family:
+    'DM Sans',
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--color-text);
+  background:
+    radial-gradient(ellipse 80% 50% at 50% -20%, color-mix(in oklab, var(--color-accent) 12%, transparent), transparent),
+  var(--color-bg);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  color: inherit;
+}
+
+.section {
+  padding: clamp(2.5rem, 5vw, 4rem) 0;
+}
+
+.section__inner {
+  max-width: var(--layout-max);
+  margin: 0 auto;
+  padding: 0 1.25rem;
+}
+
+.section__header {
+  margin-bottom: 2rem;
+  max-width: 38rem;
+}
+
+.section__title {
+  margin: 0 0 0.5rem;
+  font-size: clamp(1.5rem, 3vw, 1.85rem);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--color-text);
+}
+
+.section__subtitle {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.55;
+  color: var(--color-muted);
+}

@@ -1,0 +1,20 @@
+<section id="skills" class="section skills" aria-labelledby="skills-heading">
+  <div class="section__inner">
+    <header class="section__header">
+      <h2 id="skills-heading" class="section__title">Technical skills</h2>
+      <p class="section__subtitle">Stack shaped by years of backend, integration, and cloud delivery.</p>
+    </header>
+    <div class="skills__grid">
+      @for (cat of categories(); track cat.category) {
+        <article class="skills__card">
+          <h3 class="skills__category">{{ cat.category }}</h3>
+          <ul class="skills__list">
+            @for (item of cat.items; track item) {
+              <li>{{ item }}</li>
+            }
+          </ul>
+        </article>
+      }
+    </div>
+  </div>
+</section>

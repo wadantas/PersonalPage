@@ -1,0 +1,13 @@
+<app-site-header />
+<main class="page">
+  <app-hero-section [contact]="portfolio.contact" />
+  <app-summary-section [paragraphs]="portfolio.summaryParagraphs" />
+  <app-skills-section [categories]="portfolio.skillCategories" />
+  <app-experience-section [jobs]="portfolio.experience" />
+  <app-education-section
+    [education]="portfolio.education"
+    [languages]="portfolio.languages"
+  />
+  <app-contact-section [contact]="portfolio.contact" />
+</main>
+<app-site-footer [contact]="portfolio.contact" />

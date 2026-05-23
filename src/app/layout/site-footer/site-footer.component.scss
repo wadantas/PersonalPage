@@ -1,0 +1,18 @@
+.site-footer {
+  border-top: 1px solid var(--color-border);
+  margin-top: 4rem;
+  padding: 2rem 1.25rem;
+  background: color-mix(in oklab, var(--color-surface) 92%, black);
+}
+
+.site-footer__inner {
+  max-width: var(--layout-max);
+  margin: 0 auto;
+  text-align: center;
+}
+
+.site-footer__copy {
+  margin: 0;
+  font-size: 0.85rem;
+  color: var(--color-muted);
+}

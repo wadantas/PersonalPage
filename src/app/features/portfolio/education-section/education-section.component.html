@@ -1,0 +1,35 @@
+<section id="education" class="section education" aria-labelledby="education-heading">
+  <div class="section__inner">
+    <header class="section__header">
+      <h2 id="education-heading" class="section__title">Education & languages</h2>
+      <p class="section__subtitle">Formal training and how I communicate in global teams.</p>
+    </header>
+    <div class="education__grid">
+      <div>
+        <h3 class="education__subheading">Education</h3>
+        <ul class="education__list">
+          @for (e of education(); track e.institution + e.degree) {
+            <li class="education__card">
+              <p class="education__degree">{{ e.degree }}</p>
+              <p class="education__institution">{{ e.institution }}</p>
+              @if (e.period) {
+                <p class="education__period">{{ e.period }}</p>
+              }
+            </li>
+          }
+        </ul>
+      </div>
+      <div>
+        <h3 class="education__subheading">Languages</h3>
+        <ul class="education__langs">
+          @for (lang of languages(); track lang.language) {
+            <li class="education__lang">
+              <span class="education__lang-name">{{ lang.language }}</span>
+              <span class="education__lang-level">{{ lang.level }}</span>
+            </li>
+          }
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>

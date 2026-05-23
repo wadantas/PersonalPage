@@ -1,0 +1,11 @@
+<header class="site-header" [class.site-header--scrolled]="scrolled()">
+  <div class="site-header__inner">
+    <a class="site-header__brand" href="#top" aria-label="William Araujo Dantas — home">WAD</a>
+    <nav class="site-header__nav" aria-label="Primary">
+      @for (link of navLinks; track link.href) {
+        <a class="site-header__link" [href]="link.href">{{ link.label }}</a>
+      }
+    </nav>
+    <a class="site-header__cta" href="#contact">Get in touch</a>
+  </div>
+</header>

@@ -1,0 +1,15 @@
+<section id="about" class="section summary" aria-labelledby="summary-heading">
+  <div class="section__inner">
+    <header class="section__header">
+      <h2 id="summary-heading" class="section__title">Professional summary</h2>
+      <p class="section__subtitle">
+        Enterprise .NET backend engineering with a strong focus on reliability, security, and scale.
+      </p>
+    </header>
+    <div class="summary__grid">
+      @for (p of paragraphs(); track $index) {
+        <p class="summary__text">{{ p }}</p>
+      }
+    </div>
+  </div>
+</section>

@@ -1,0 +1,29 @@
+<section id="experience" class="section experience" aria-labelledby="experience-heading">
+  <div class="section__inner">
+    <header class="section__header">
+      <h2 id="experience-heading" class="section__title">Professional experience</h2>
+      <p class="section__subtitle">Highlights from banking, healthcare, tolling, and e-commerce platforms.</p>
+    </header>
+    <ol class="experience__timeline">
+      @for (job of jobs(); track job.company + job.period) {
+        <li class="experience__item">
+          <div class="experience__marker" aria-hidden="true"></div>
+          <article class="experience__card">
+            <header class="experience__card-head">
+              <div>
+                <h3 class="experience__company">{{ job.company }}</h3>
+                <p class="experience__role">{{ job.role }}</p>
+              </div>
+              <time class="experience__period">{{ job.period }}</time>
+            </header>
+            <ul class="experience__highlights">
+              @for (h of job.highlights; track h) {
+                <li>{{ h }}</li>
+              }
+            </ul>
+          </article>
+        </li>
+      }
+    </ol>
+  </div>
+</section>
